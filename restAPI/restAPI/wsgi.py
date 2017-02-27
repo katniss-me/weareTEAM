@@ -8,9 +8,11 @@ https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
 """
 
 import os
-
+import sys
+# sys.path.append('/home/ubuntu/weareTEAM/restAPI/restAPI')
+sys.path.append('/home/ubuntu/weareTEAM/restAPI')
+os.environ['DJANGO_SETTINGS_MODULE'] = 'restAPI.settings'
 from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "restAPI.settings")
-
 application = get_wsgi_application()
+
+
