@@ -10,7 +10,13 @@ class AppointedLocationsView(generics.ListCreateAPIView):
     serializer_class = AppointedSerializer
     permission_classes = (permissions.IsAuthenticated, IsOwnerOrReadOnly,)
 
+    def perform_create(self, serializer):
+            serializer.save(owner=self.request.user)
+
 class CurrentLocationsView(generics.ListCreateAPIView):
     queryset = Current.objects.all()
     serializer_class = CurrentSerializer
     permission_classes = (permissions.IsAuthenticated, IsOwnerOrReadOnly,)
+
+    def perform_create(self, serializer):
+            serializer.save(owner=self.request.user)
