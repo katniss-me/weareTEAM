@@ -14,6 +14,7 @@
 		6F5450E71E6BFB270071A37A /* AppMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F5450E51E6BFB270071A37A /* AppMate.xcdatamodeld */; };
 		6F5450E91E6BFB270071A37A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5450E81E6BFB270071A37A /* Assets.xcassets */; };
 		6F5450EC1E6BFB270071A37A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5450EA1E6BFB270071A37A /* LaunchScreen.storyboard */; };
+		6F6C8F021E6C053C00777CEC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6C8F011E6C053C00777CEC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6F5450E81E6BFB270071A37A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F5450EB1E6BFB270071A37A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F5450ED1E6BFB270071A37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F6C8F011E6C053C00777CEC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B6B14B223CE0ED82557E98C2 /* Pods_AppMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9711F140C6B737C5D78C1FA /* Pods-AppMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppMate/Pods-AppMate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F6C8F021E6C053C00777CEC /* CoreLocation.framework in Frameworks */,
 				3B3B6C91A6D52E99C756B398 /* Pods_AppMate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +48,7 @@
 		4A8E7E087BC3DD49A604F1A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F6C8F011E6C053C00777CEC /* CoreLocation.framework */,
 				B6B14B223CE0ED82557E98C2 /* Pods_AppMate.framework */,
 			);
 			name = Frameworks;
@@ -126,6 +130,7 @@
 				TargetAttributes = {
 					6F5450DA1E6BFB270071A37A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5AF2J46QXC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -338,6 +343,7 @@
 			baseConfigurationReference = 31034EB2A5FABDBDAE43EAF5 /* Pods-AppMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5AF2J46QXC;
 				INFOPLIST_FILE = AppMate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hys.develop.AppMate;
@@ -351,6 +357,7 @@
 			baseConfigurationReference = B9711F140C6B737C5D78C1FA /* Pods-AppMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5AF2J46QXC;
 				INFOPLIST_FILE = AppMate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hys.develop.AppMate;
@@ -378,6 +385,7 @@
 				6F5450F21E6BFB270071A37A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
