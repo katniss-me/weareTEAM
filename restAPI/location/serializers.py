@@ -5,4 +5,4 @@ class LocationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Location
-        fields = ('id', 'name', 'address')
+        fields = ('id', 'name', 'address', 'location')
