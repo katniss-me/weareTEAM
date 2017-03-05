@@ -1,6 +1,10 @@
 from django.contrib import admin
-from location.models import Location
+from location.models import Appointed, Current
 
-@admin.register(Location)
-class LocationAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'address', 'created_at', 'modified_at')
+@admin.register(Appointed)
+class AppointedLocationsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'owner', 'address', 'created_at', 'modified_at')
+
+@admin.register(Current)
+class CurrentLocationsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'owner', 'address', 'created_at', 'modified_at')

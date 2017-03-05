@@ -1,8 +1,14 @@
-from location.models import Location
+from location.models import Appointed, Current
 from rest_framework import serializers
 
-class LocationSerializer(serializers.ModelSerializer):
+class AppointedSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Location
-        fields = ('id', 'name', 'address', 'location')
+        model = Appointed
+        fields = ('id', 'owner', 'address', 'location')
+
+class CurrentSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Current
+        fields = ('id', 'owner', 'address', 'location')

@@ -8,6 +8,6 @@ router = DefaultRouter()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^location/', include('location.urls')),
+    url(r'^locations/', include('location.urls')),
     url(r'^users/', include('users.urls')),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
