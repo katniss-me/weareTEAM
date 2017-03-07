@@ -20,15 +20,15 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     let regionRadius: CLLocationDistance = 1000
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let locataion = locations[0]
+        let locataion = locations.last
 //        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
 //        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(locataion.coordinate.latitude+10, locataion.coordinate.longitude+10)
         let region:MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(
-            CLLocationCoordinate2DMake(locataion.coordinate.latitude+0.01, locataion.coordinate.longitude), 10000, 10000);
+            CLLocationCoordinate2DMake(locataion!.coordinate.latitude+0.01, locataion!.coordinate.longitude), 10000, 10000);
         
         mapView.setRegion(region, animated:true)
         self.mapView.showsUserLocation = true
-        self.manager.stopUpdatingLocation()
+//        self.manager.stopUpdatingLocation()
     }
     
     override func viewDidLoad() {
